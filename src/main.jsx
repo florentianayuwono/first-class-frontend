@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import Cart from "./pages/Cart.jsx";
 import Status from "./pages/Status.jsx";
 import Home from "./pages/Home.jsx";
+import Order from "./pages/Order.jsx";
 import { Product } from "./pages/Product.jsx";
 import "./index.css";
 
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Route path="/" element={<App />} />
             <Route path="home" element={<Home />} />
             <Route path="staff/home" element={<StaffHome />} />
+            <Route path="staff/order/:id" element={<Order />} />
             <Route path="cart" element={<Cart />} />
             <Route path="status/:id" element={<Status />} />
             <Route path="product/:id" element={<Product />} />
